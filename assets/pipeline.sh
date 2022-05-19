@@ -1,13 +1,9 @@
 #!/bin/bash
 
-#Push any updates to GitHub before starting your application
-cd ..
-git add .
-git commit --message "COMPX341-22A-A3 Commiting from CI/CD Pipeline"
-git push
+npm install
+
+#Compile the code and push any changes to GitHub if there are no compile-time errors
+npm run build && cd .. && git add . && git commit --message "COMPX341-22A-A3 Commiting from CI/CD Pipeline" && git push && cd assets
 
 #Serve the application locally
-cd assets
-npm install
-npm run build
 npm run start
