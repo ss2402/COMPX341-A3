@@ -1,3 +1,4 @@
+//Name: Samantha Steed, Student ID: 1522578
 //
 // In production, we register a service worker to serve assets from local cache.
 

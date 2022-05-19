@@ -1,3 +1,4 @@
+//Name: Samantha Steed, Student ID: 1522578
 //
 export default {
   apiGateway: {
